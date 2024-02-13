@@ -1,0 +1,20 @@
+/* DEV */
+
+Developer: Shahibul Hasan
+E-mail: kshsiaan@gmail.com
+Phone: 01904387966
+
+                 
+/* SITE */
+
+                            
+Last update: 2024/02/13
+
+                            
+Standards: HTML5, CSS3.
+
+                            
+Components: Bootstrap
+
+                            
+Software: Software used for the development

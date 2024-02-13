@@ -1,0 +1,363 @@
+// @import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #efefef;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #069a44;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #02632b;
+}
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+body {
+    background-color: rebeccapurple;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+// Header
+
+header {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    .header-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        user-select: none;
+        opacity: 0.7;
+        z-index: 2;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+
+//Header top navbar with logos
+    nav{
+        height: 54px;
+        width: 99vw !important;
+        margin: 0 0.5vw;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+        img{
+            height: 48px;
+            z-index: 4;
+        }
+        .gbs_logo{
+            width: 48px;
+        }
+        .kpi_banner{
+            width: fit-content;
+        }
+        .kpi_logo{
+            width: 48px;
+        }
+    }
+}
+//This is the hidden slider of the header. it does change tho!
+.carousel{
+    z-index: 10;
+    
+    .carousel-item{
+        img{
+            height: 80vh;
+            object-fit: cover;
+            opacity: 0.0;
+            transition: opacity 0.3s;
+            &:hover{
+                opacity: 1;
+            }
+        }
+
+    }
+}
+//Sticky navbar under <Header/>
+.menu{
+    height: 48px;
+    width: 100%;
+    background-color: #16c16e;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 48px;
+    a{
+        color: #292929;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.1vw;
+        text-decoration: none;
+    }
+    .active{
+        color: #e2e2e2;
+    }
+}
+
+//? Main section starts from here
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+//Sidebar on the left
+
+.sidebar{
+    height: 100vh;
+    width: 20vw;
+    background-color: #318b5e;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 8px;
+    padding-top: 52px;
+
+    a{
+        color: #e2e2e2;
+        text-decoration: none;
+        font-size: 14px;
+        margin-top: 24px;
+        padding: 0 6px;
+        &:hover{
+            color: #f3f3f3;
+        }
+    }
+
+    
+}
+
+// Inner content section
+.metabody{
+    width: 60vw;
+    background-color: #f3f3f3;
+}
+.newsPanel{
+    height: 48px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: content;
+    background-color: #ebebeb;
+
+    div{
+        &:first-of-type{
+        width: 30%;
+        text-align: center;
+        font-weight: bold;
+        }
+        &:last-of-type{
+        width: 70%;
+}
+    }
+}
+.noticeBoard{
+    background-color: #e5e5f7;
+    background-image:  linear-gradient(#d4d4d4 2px, transparent 2px), linear-gradient(90deg, #d4d4d4 2px, transparent 2px), linear-gradient(#d4d4d4 1px, transparent 1px), linear-gradient(90deg, #d4d4d4 1px, #e5e5f7 1px);
+    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+    min-height: 200px;
+    max-height: max-content;
+    box-shadow: 1px 1px 5px #00000030;
+    
+    h3{
+        margin: 0;
+        padding: 12px 24px;
+    }
+    p{
+        padding: 12px 24px;
+    }
+}
+.welcomeBoard{
+margin-top: 24px;
+    
+    .heading{
+        background-color: #318b5e;
+        color: #e2e2e2;
+    }
+    p{
+        padding: 34px;
+border: solid 0.5px #292929;
+    }
+}
+.card{
+    background-color: #f3f3f3;
+    margin: 24px auto;
+}
+.navigation-pan-box{
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+}
+.navigation-navigator > li > a{
+    color: #069a44;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover{
+        color: #02632b;
+    }
+}
+.at-once,.map{
+    width: 48%;
+    .heading{
+        background-color: #02632b;
+        color: #f3f3f3;
+    }
+}
+.yt-frame{
+    width: 100%;
+    aspect-ratio: 1/0.75;
+}
+.map-contain{
+    width: 100%;
+    img{
+        width: 100%;
+        aspect-ratio: 1/0.75;
+        object-fit: cover;
+    }
+}
+
+
+//Right side panel with Biography and Notice
+.rightSide{
+    height: auto;
+    width: 20vw;
+    
+    
+}
+.biography{
+    height: fit-content;
+
+    .bio{
+        margin-top: 24px;
+
+        .heading{
+            background-color: #318b5e;
+            color: #f3f3f3;
+        }
+        img{
+            width: 100%;
+            aspect-ratio: 1/1;
+        }
+        .bio-details{
+            height: fit-content;
+            width: 100%;
+            a{
+                color: #292929;
+                display: block;
+            }
+        }
+    }
+}
+.notice{
+    .heading{
+        background-color: #318b5e;
+        width: 100%;
+        color: #f3f3f3;
+    }
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 8px;
+    padding-top: 52px;
+}
+
+
+//Footer
+
+footer{
+    background-color: #efefef;
+}
+
+.footer-list{
+    margin: 0;
+    padding: 0;
+    padding-left: 1vw;
+    list-style: none;
+    
+    li{
+        margin: 28px 0;
+        padding: 0;
+        
+
+        a{
+            color: #292929;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
+.footer-address{
+    p{
+        margin: 28px 0;
+        a{
+            color: #292929;    
+        }
+    }
+}
+
+
+// Responsive Styling
+@media (max-width: 767.98px) { 
+    
+    .metabody{
+        width: 100vw;
+    }
+    .rightSide{
+        width: 100vw;
+    }
+    main{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+    .menu{
+        padding: 0 12px;
+        a{  
+            font-size: 2vw;
+        }
+    }
+.navigation-pan-box{
+    display: block;
+}
+.navigation-navigator > li > a{
+    font-size: 2vw;
+}
+footer{
+    .copyright-panel{
+        font-size: 2.2vw;
+    }
+}
+}
