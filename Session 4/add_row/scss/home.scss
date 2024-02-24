@@ -1,0 +1,45 @@
+@import 'res';
+body{
+    background-image: url('/assets/Microsoft_Windows_98_logo_with_wordmark.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20vw;
+    background-color: #04654e;
+    height: 100vh;
+    width: 100vw;    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-items:center;
+}
+h1{
+    padding: 8px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+table{
+    width: 100%;
+}
+tbody{
+    background-color: silver;
+}
+td{
+    
+    input{
+        width: 90%;
+        margin: 12px 0;
+    }
+    button{
+        margin: 12px 0;
+        font-size: 18px;
+        cursor: pointer;
+    }
+}
+.center{
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
