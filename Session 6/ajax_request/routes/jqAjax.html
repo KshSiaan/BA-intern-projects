@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/jqAjax.css" />
+    <title>Ajax request & related topics</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="navlinks">
+        <a href="/index.html">Home</a>
+        <a href="xhr.html">XHR Request</a>
+        <a href="fetch.html">Fetch API</a>
+        <a href="jqAjax.html">Jquery Ajax</a>
+      </div>
+    </nav>
+    <main style="display: none !important">
+      <section>
+        <div class="card">
+          <div class="inpTaker">
+            <input
+              type="text"
+              name=""
+              id="recipeInp"
+              placeholder="Find your recipe.."
+            />
+            <button type="button" onclick="findIt()">Search</button>
+          </div>
+          <p><b id="loader"></b></p>
+          <h4 class="text-center mt-3">
+            <span class="recAmm" id="recAmm">00</span>
+            data recieved
+          </h4>
+        </div>
+      </section>
+      <section>
+        <div class="card kinds">
+          <h4 class="text-center mt-3"><strong>Reciepes we found</strong></h4>
+
+          <ul id="lister"></ul>
+        </div>
+      </section>
+      <section>
+        <div class="card instPoint" id="instPoint"></div>
+      </section>
+    </main>
+    <div class="DataGet" id="DataGet">
+      <button onclick="screenUpdate()">Send Req</button>
+    </div>
+
+    <script src="/js/apis/jqAjax.js"></script>
+  </body>
+</html>

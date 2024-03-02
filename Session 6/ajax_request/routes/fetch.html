@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/fetch.css" />
+    <title>Ajax request & related topics</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="navlinks">
+        <a href="/index.html">Home</a>
+        <a href="xhr.html">XHR Request</a>
+        <a href="fetch.html">Fetch API</a>
+        <a href="jqAjax.html">Jquery Ajax</a>
+      </div>
+    </nav>
+    <main style="display: none">
+      <section>
+        <div class="">
+          <h3>NASA's EPIC satellites captured images of:</h3>
+          <h4 class="p-3" id="datePut"></h4>
+        </div>
+        <div class=""><img src="" id="imgPoint" alt="" /></div>
+        <div class=""><h2 id="loadPut"></h2></div>
+      </section>
+      <section>
+        <div class="">
+          <button class="btn" onclick="updateIndex('back')">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/parakeet-line/96/circled-chevron-left.png"
+              loading="lazy"
+              alt="circled-chevron-left"
+            />
+          </button>
+        </div>
+        <div class="">
+          <h1 class="text-center" id="index"></h1>
+        </div>
+        <div class="">
+          <button class="btn" onclick="updateIndex('forward')">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/parakeet-line/96/circled-chevron-right.png"
+              alt="circled-chevron-right"
+            />
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <div class="DataGet" id="DataGet">
+      <button onclick="screenUpdate()">Send Req</button>
+    </div>
+
+    <script src="/js/apis/fetch.js"></script>
+  </body>
+</html>
