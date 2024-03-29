@@ -1,22 +1,20 @@
-# Project Title: ML_Intern_Task
 
-## Introduction:
+# Buissness Automation internship assignment projects
+This is where the buissness automation internship batch 2k24 Khandaker Shahibul Hasan's Projects are
 
-Sir. It was a tough job at first. as soon as i got along, it became easier. but due to time shortage and mid term pressure. i couldnt finish one task completely out of all. but i could. so i hope youo understand my situation.
+### Introduction
+in 2k24 BA intern batch these are the projects that were/will be assigned til the end of the intern. all the possible programs will be here.
 
-**So in conclusion I have done the job**
-
-### Project Target :
-
-- Data science
-- Numpy, Pandas, Matplotlib
-
-## Features:
+### Features
 
 - Clean Code
 - Simple and Light Design
-- _Easy to read comments_ for faster understading
+- _Easy to read comments_ for faster understanding
 
-## Languages Used:
+### Languages used so far 
 
+- HTML
+- CSS
+- JS
 - Python
+- PHP
